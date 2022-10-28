@@ -21,7 +21,8 @@ Nomor: ${nomorowner}
 
 ${botdate}
 `
-        let img1 = fs.readFileSync('./thumbnail.jpg');
+        let img1 = fs.readFileSync('./tmp/1666610464203.jpg
+');
         let img2 = fs.readFileSync('./media/bawah.png');
     return conn.sendButton(m.chat, hiasan, sewa, await (await fetch(`https://telegra.ph/file/d0b5a9e057ccb13d00743.jpg`)).buffer(), [["Menu", usedPrefix + "menu"], ["Sewa Bot", usedPrefix + "sewa"]], m, {
         contextInfo: {
