@@ -27,32 +27,32 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       
 
 /*============== INFO OWNER ==============*/
-global.sig = 'https://instagram.com/danibotz_official'
-global.syt = 'https://youtu.be/pwLZpdfO8AU'
-global.sgh = 'https://github.com/YTDANIBOTZ'
-global.sgc = 'https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL'
-global.swa = 'wa.me/6281348106274'
+global.sig = '-'
+global.syt = 'https://youtu.be/rLSfcwzh6cM'
+global.sgh = '-'
+global.sgc = '-'
+global.swa = 'wa.me/6283894556422'
 global.swb = 'https://'
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*============== PAYMENT ==============*/
-global.pdana = '081251549899'
-global.povo = '081352848936'
-global.pgopay = '081352848936'
-global.ppulsa = '081251549899'
-global.ppulsa2 = '081348106274'
-global.psaweria = 'https://saweria.co/raraharsita2'
+global.pdana = '-'
+global.povo = '6283894556422'
+global.pgopay = '6283894556422'
+global.ppulsa = '6283894556422'
+global.ppulsa2 = '6283894556422'
+global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6281352848936'
-global.nomorown = '6281251549899'
-global.namebot = 'DaniBotzラ'
-global.nameown = 'ᴹᴿ᭄ DaniXd ×፝֟͜×'
+global.nomorbot = '6289668698086'
+global.nomorown = '6283894556422'
+global.namebot = 'Sena-Botzラ'
+global.nameown = 'DIMZ RAWRR×፝֟͜×'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6281251549899', 'ᴹᴿ᭄ DaniXd? ×፝֟͜×', 'true']
+  ['6283894556422', 'Dimz rawrr? ×፝֟͜×', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -96,14 +96,14 @@ global.APIKeys = { // APIKey Here
 }
 
 /*============== WATERMARK ==============*/
-global.wm = 'DaniBotzラ | By ᴹᴿ᭄ DaniXd ×፝֟͜×' //Main Watermark
-global.wm2 = 'ᴹᴿ᭄ DaniXd ×፝֟͜×'
-global.wm3 = 'DaniBotzラ | By ᴹᴿ᭄ DaniXd ×፝֟͜×'
+global.wm = 'Sena-Botzラ | By Dimz rawrr×፝֟͜×' //Main Watermark
+global.wm2 = 'Dimz rawrrr×፝֟͜×'
+global.wm3 = 'Sena-Botzラ | By DIMZ rawrrr ×፝֟͜×'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `DaniBotzラ | ʙʏ ${global.nameown}`
-global.author = 'ᴹᴿ᭄ DaniXd ×፝֟͜×' 
-global.packname = 'ᴹᴿ᭄ DaniXd ×፝֟͜×'
+global.titlebot = `Swna-Botzラ | ʙʏ ${global.nameown}`
+global.author = 'ᴹᴿ᭄ DIMZ rawrrr ×፝֟͜×' 
+global.packname = 'ᴹᴿ᭄ Dimz rawrrr×፝֟͜×'
 global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰'
 
 
@@ -119,10 +119,10 @@ global.thumbWarn = 'https://telegra.ph/file/77d11b06617f0797a45ac.jpg'
 global.botintro = 'Hallo, Kenalin saya DaniBotz Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *ᴹᴿ᭄ King Of Bear ×፝֟͜×* Saya di rilis pada tanggal\n🗓 ️_16/10/2022_'
 global.intro = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 /*============== GLOBAL BIO ==============*/
-global.nameowner = 'ᴹᴿ᭄ DaniXd ×፝֟͜×'
+global.nameowner = 'ᴹᴿ᭄ DIMZ rawrrr ×፝֟͜×'
 global.umurowner = '22'
-global.asalowner = 'Kalimantan, Banjar'
-global.nomorowner = 'wa.me/6281348106274'
+global.asalowner = 'Bekasi, selatan'
+global.nomorowner = 'wa.me/6283894556422'
 global.pacarowner = 'Kepo amat sih;v'
 
 /*============== TEXT ==============*/
