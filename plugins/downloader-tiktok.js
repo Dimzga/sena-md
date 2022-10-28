@@ -1,5 +1,5 @@
 var { tiktokdl } = require ('@bochilteam/scraper')
-var wm = '                「 ꜱᴀᴅ BOT あ⁩ 」'
+var wm = '                「 sena⁩ 」'
 var handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
     var { author: { nickname }, video, description } = await tiktokdl(args[0])
