@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+Limport fetch from 'node-fetch'
 import fs from 'fs'
 let handler = async (m, { conn, args, command }) => {
   const ultah = new Date('November 4 2022 00:0:01')
@@ -18,8 +18,8 @@ contextInfo: { externalAdReply :{
                         description: 'anu',
                         title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
                         body: `Subscribe YT My Bestie`,          previewType: 0,
-                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
-                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        thumbnail: await (await fetch(`https://telegra.ph/file/f6ff09a046aecfdc3b42c.jpg`)).buffer(),
+                        sourceUrl: 'https://youtu.be/rLSfcwzh6cM'
                       }}
 })
 }
