@@ -1,14 +1,19 @@
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) throw `contoh:\n ${usedPrefix}${command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
-    let res = (await.get(API('males', '/tiktok', { url: args[0] } ))).data;
-    if (res.status != 200) throw res.message;
-    if (!res) throw res.message;
-    conn.sendButtonVid(m.chat, res.video, `*Judul:* ${res.title}\n${res.author ? `*Pembuat Video:* ${res.author}` : '\n' }`.trim(), 'Cara simpan digalery:\n1. Download dulu videonya\n2. Buka terus klik titik 3 pojok kanan atas\n3. lalu klik simpan!', 'menu', usedPrefix + 'menu', m)
-}
-handler.help = ['tiktok'].map(v => v + ' <url>')
-handler.tags = ['downloader']
-handler.command = /^(tik(tok)?(dl)?)$/i
+var { tiktokdl } = require ('@bochilteam/scraper')
+var wm = '                「 ꜱᴀᴅ BOT あ⁩ 」'
+var handler = async (m, { conn, args, usedPrefix, command }) => {
+if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
+    var { author: { nickname }, video, description } = await tiktokdl(args[0])
+    var url = video.no_watermark || video.no_watermark2 || video.no_watermark_raw
+    if (!url) throw 'Can\'t download video!'
+    conn.sendFile(m.chat, url, 'tiktok.mp4', `*TIKTOK DOWNLOADER*
+*Nickname:* ${nickname}
+*Description:* ${description}
 
-handler.limit = 1
+${wm}
+`.trim(), m)
+}
+handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
+handler.tags = ['downloader']
+handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
 
 export default handler
