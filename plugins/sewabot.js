@@ -38,7 +38,7 @@ let text = `━━ꕥ〔 *𝚂𝙴𝚆𝙰 & 𝙿𝚁𝙴𝙼𝙸𝚄𝙼* 〕�
 ┗━━ꕥ *${author}* ꕥ━⬣
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Klick untuk berlangganan', url: 'https://wa.me/6288279268363?text=Hallo admin, saya tertarik untuk menyewa bot yuki adisty'}},
+    {index: 1, urlButton: {displayText: 'Klick untuk berlangganan', url: 'https://wa.me/6283894556422?text=Hallo admin, saya tertarik untuk menyewa bot Sena'}},
     {index: 4, quickReplyButton: {displayText: 'Owner', id: '.owner'}},
 ]
 let tm = {
