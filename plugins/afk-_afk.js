@@ -26,4 +26,4 @@ Selama ${this.clockString(new Date - afkTime)}
     return true
 }
 
-module.exports = handler
+export default handler
