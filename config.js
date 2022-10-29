@@ -53,7 +53,7 @@ global.nameown = 'DIMZ RAWRR×፝֟͜×'
 /*============== STAFF ==============*/
 global.owner = [
   ['6283894556422', 'Dimz rawrr? ×፝֟͜×', 'true']
-  ['6288229863041', 'debaj', 'true']
+  // ['6288229863041', 'debaj', 'true']
 ] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
