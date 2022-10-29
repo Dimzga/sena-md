@@ -1,18 +1,13 @@
-let handler = async (m, { text }) => {
+let handler = async(m, { conn, usedPrefix, text }) => {
     let user = global.db.data.users[m.sender]
+const bg = "https://telegra.ph/file/e5847d1c9df8caa6bc6b7.mp4"
     user.afk = + new Date
     user.afkReason = text
-    conn.sendHydrated(m.chat,
-`*––––––––【 AFK 】––––––––*`,
-`   • ᴀᴡᴀʏ ғʀᴏᴍ ᴋᴇʏʙᴏᴀʀᴅ sᴛᴀʀᴛᴇᴅ •
-
-${conn.getName(m.sender)} is now AFK
-
-ʀᴇᴀsᴏɴ: ${text ? '' + text : 'undefined'}`, null, null, null, null, null, [
-[`ʏɢ ᴀꜰᴋ ᴅɪ ʙᴜʟʟʏ`, `Ok`]
-], m)
+    conn.sendButton(m.chat, `
+${conn.getName(m.sender)} sekarang AFK${text ? ': ' + text : ''}
+`, wm, `Menu`, `${usedPrefix}menu`, m)
 }
-handler.help = ['afk [reason]']
+handler.help = ['afk <reason>']
 handler.tags = ['main']
 handler.command = /^afk$/i
 
