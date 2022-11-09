@@ -6,10 +6,11 @@ let handler = async (m, { conn, text }) => {
   let teks = text ? text : cc.text
   let vn = `./mp3/alert.opus`
   conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
-  for (let id of groups) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? `${htki} *BROADCAST* ${htka}\n` + teks : `${htki} *BROADCAST* ${htka}\n` + teks + '\n' + readMore + '\n\n' + botdate), conn.sendFile(m.chat, vn, 'Fangz.Ganz', null, m, true, {
+  for (let id of groups) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? `${htki} *BROADCAST* ${htka}\n` + teks : `${htki} *BROADCAST* ${htka}\n` + teks + '\n' + readMore + '\n\n' + botdate), true).catch(_ => _)
+conn.sendFile(id, vn, 'Fangz.Ganz', null, m, true, {
 type: 'audioMessage',
-ptt: true }), true).catch(_ => _)
-  m.reply('Selesai Broadcast All Group :)')
+ptt: true })
+m.reply('Selesai Broadcast All Group :)')
   }
 }
 
