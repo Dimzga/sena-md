@@ -14,7 +14,7 @@ m.reply('Selesai Broadcast All Group :)')
   }
 }
 
-handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
+handler.help = ['mtt', 'mt'].map(v => v + ' <teks>')
 handler.tags = ['owner']
 handler.command = /^(mt)$/i
 
