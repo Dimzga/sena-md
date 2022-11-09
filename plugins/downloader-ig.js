@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
   for (let id of groups) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? `${htki} *BROADCAST* ${htka}\n` + teks : `${htki} *BROADCAST* ${htka}\n` + teks + '\n' + readMore + '\n\n' + botdate), true).catch(_ => _)
   m.reply('Selesai Broadcast All Group :)')
   }
-  let vn = `./mp3/insecure.opus`
+  let vn = `./mp3/alert.opus`
   conn.sendFile(m.chat, vn, 'Fangz.Ganz', null, m, true, {
 type: 'audioMessage',
 ptt: true })
