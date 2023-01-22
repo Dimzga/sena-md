@@ -1,26 +1,12 @@
-let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `${htki} *DOWNLOAD* ${htka}
-
-           WhatsApp Imune ♨️
-    
-┏━━━ꕥ〔 *Kelebihan* 〕ꕥ━⬣
-┃✾ Anti Virtex✔️
-┃✾ Anti lag✔️
-┃✾ Fitur war✔️
-┃✾ Anti Bug troli, slayer Dll✔️
-┃✾ No Password ✔️
-┗━━━━━━ꕥ`
-const templateButtons = [
-    {index: 1, urlButton: {displayText: '↗️Link', url: 'https://cararegistrasi.com/cMyXZwsK'}},
-]
-let tm = {
-text: text,
-footer: global.wm,
-templateButtons: templateButtons,
-image: {url: fla + 'Donasi'}
+let fetch = require('node-fetch')
+let handler = async (m, { conn, usedPrefix, command }) => {
+     m.reply('tunggu...')
+  let res = await (await fetch('https://raw.githubusercontent.com/Luigmntng/RESTAPI/master/data/cosplayloli.json')).json()
+  let cosser = res[Math.floor(Math.random() * res.length)]
+  await conn.sendButtonImg(m.chat, cosser, 'istri gw cosplay 😳', 'By dimz', 'Next', `.cosplayloli`, m, false)
 }
-conn.sendMessage(m.chat, tm, m)
-}
-handler.command = /^waimune1$/i
+handler.help = ['cosplayloli']
+handler.tags = ['anime']
+handler.command = /^(cosplayloli)$/i
 
 export default handler
